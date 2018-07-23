@@ -1,0 +1,6 @@
+framework module PlutoconSDK {
+  umbrella header "PlutoconSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

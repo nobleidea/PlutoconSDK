@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailDataView" customModule="Simple_Gateway" customModuleProvider="target">
+            <connections>
+                <outlet property="imageArrow" destination="DJP-Wk-Tpd" id="xUE-Xv-8td"/>
+                <outlet property="labelTitle" destination="YRF-Nj-qx1" id="BOZ-Rf-shm"/>
+                <outlet property="labelValue" destination="mnn-SB-67o" id="XHg-tY-8KF"/>
+                <outlet property="viewContainer" destination="iN0-l3-epB" id="loR-ny-Kh4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dvU-Qs-mqC">
+                    <rect key="frame" x="16" y="321.5" width="348" height="24"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="KVR-cg-2A4">
+                            <rect key="frame" x="0.0" y="2.5" width="320" height="19.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRF-Nj-qx1">
+                                    <rect key="frame" x="0.0" y="0.0" width="142" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnn-SB-67o">
+                                    <rect key="frame" x="142" y="0.0" width="178" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                    <color key="textColor" red="0.48627450979999998" green="0.52941176469999995" blue="0.5568627451" alpha="1" colorSpace="deviceRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icRight" translatesAutoresizingMaskIntoConstraints="NO" id="DJP-Wk-Tpd">
+                            <rect key="frame" x="324" y="0.0" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="e0A-Lu-1DA"/>
+                                <constraint firstAttribute="height" constant="24" id="llX-fZ-Xm0"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZo-Ig-80v">
+                    <rect key="frame" x="0.0" y="666.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.81568627449999997" green="0.82745098039999998" blue="0.83137254900000002" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="TaT-7c-Eut"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SZo-Ig-80v" secondAttribute="bottom" id="2nc-vV-FXC"/>
+                <constraint firstItem="dvU-Qs-mqC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DC9-rN-H46"/>
+                <constraint firstItem="dvU-Qs-mqC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="VlF-m3-27s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dvU-Qs-mqC" secondAttribute="trailing" constant="11" id="cFc-so-wzW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SZo-Ig-80v" secondAttribute="trailing" id="gaY-rs-sqb"/>
+                <constraint firstItem="SZo-Ig-80v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kiv-cn-IWz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="32.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icRight" width="24" height="24"/>
+    </resources>
+</document>

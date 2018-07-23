@@ -1,30 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LIy-Le-TJD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Plutocon SDK-->
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PlutoconSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlutoconSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lGY-Q0-uB1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lGY-Q0-uB1" secondAttribute="trailing" id="6kZ-TS-xT6"/>
+                            <constraint firstItem="lGY-Q0-uB1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NtQ-dg-nze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lGY-Q0-uB1" secondAttribute="bottom" id="hGA-VN-ql3"/>
+                            <constraint firstItem="lGY-Q0-uB1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oBp-xa-6Uh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Plutocon SDK" id="qcD-vq-Rku"/>
+                    <connections>
+                        <outlet property="tableView" destination="lGY-Q0-uB1" id="hcp-ff-AAW"/>
+                        <segue destination="2qc-vY-CIs" kind="show" identifier="goDetailSegue" id="Fb1-wl-szF"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="972" y="31.934032983508249"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="JWL-Kl-lG6">
+            <objects>
+                <viewController id="2qc-vY-CIs" customClass="DetailViewController" customModule="PlutoconSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xE2-G5-FNP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZD-eq-k04" customClass="DetailDataView" customModule="PlutoconSDK_Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Loq-5u-WIu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Device Name"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AP9-Wh-n9z" customClass="DetailDataView" customModule="PlutoconSDK_Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gmf-WJ-jgP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Major"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYK-az-w2b" customClass="DetailDataView" customModule="PlutoconSDK_Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="180" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="uR5-Rd-STz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Minor"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vT2-LS-Wkr" customClass="DetailDataVerticalView" customModule="PlutoconSDK_Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="258" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="foH-tU-uvD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="UUID"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AP9-Wh-n9z" firstAttribute="trailing" secondItem="L0H-Uj-nEw" secondAttribute="trailing" id="8fF-Bo-nAV"/>
+                            <constraint firstItem="vT2-LS-Wkr" firstAttribute="top" secondItem="hYK-az-w2b" secondAttribute="bottom" constant="34" id="8xc-CQ-3jh"/>
+                            <constraint firstItem="hYK-az-w2b" firstAttribute="trailing" secondItem="L0H-Uj-nEw" secondAttribute="trailing" id="GFp-Ti-NxZ"/>
+                            <constraint firstItem="VZD-eq-k04" firstAttribute="leading" secondItem="L0H-Uj-nEw" secondAttribute="leading" id="T7M-FJ-bQ2"/>
+                            <constraint firstItem="vT2-LS-Wkr" firstAttribute="trailing" secondItem="L0H-Uj-nEw" secondAttribute="trailing" id="UPC-EO-vFN"/>
+                            <constraint firstItem="hYK-az-w2b" firstAttribute="top" secondItem="AP9-Wh-n9z" secondAttribute="bottom" id="ZlS-AM-ng2"/>
+                            <constraint firstItem="hYK-az-w2b" firstAttribute="leading" secondItem="L0H-Uj-nEw" secondAttribute="leading" id="obV-60-m1r"/>
+                            <constraint firstItem="L0H-Uj-nEw" firstAttribute="trailing" secondItem="VZD-eq-k04" secondAttribute="trailing" id="p0D-2g-qF3"/>
+                            <constraint firstItem="AP9-Wh-n9z" firstAttribute="leading" secondItem="L0H-Uj-nEw" secondAttribute="leading" id="pWj-7C-gzX"/>
+                            <constraint firstItem="vT2-LS-Wkr" firstAttribute="leading" secondItem="L0H-Uj-nEw" secondAttribute="leading" id="qWn-n8-buL"/>
+                            <constraint firstItem="AP9-Wh-n9z" firstAttribute="top" secondItem="VZD-eq-k04" secondAttribute="bottom" id="tE3-QY-1D0"/>
+                            <constraint firstItem="VZD-eq-k04" firstAttribute="top" secondItem="L0H-Uj-nEw" secondAttribute="top" constant="28" id="vRs-ew-B8X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L0H-Uj-nEw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="zh4-QG-kQJ"/>
+                    <connections>
+                        <outlet property="viewDeviceName" destination="VZD-eq-k04" id="n5i-eC-LBN"/>
+                        <outlet property="viewMajor" destination="AP9-Wh-n9z" id="K1N-74-ZYt"/>
+                        <outlet property="viewMinor" destination="hYK-az-w2b" id="CJM-Ga-Z6u"/>
+                        <outlet property="viewUUID" destination="vT2-LS-Wkr" id="aUg-q3-AnT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIx-sl-F7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419" y="32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nuF-Uz-Mh0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LIy-Le-TJD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I1x-Mg-RZ4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yCh-m0-6EH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCO-ic-Uf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="32"/>
         </scene>
     </scenes>
 </document>

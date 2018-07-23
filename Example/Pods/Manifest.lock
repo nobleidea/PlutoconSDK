@@ -1,0 +1,16 @@
+PODS:
+  - PlutoconSDK (0.1.0)
+
+DEPENDENCIES:
+  - PlutoconSDK (from `../`)
+
+EXTERNAL SOURCES:
+  PlutoconSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PlutoconSDK: 6ddedb74341b8932ebfe5799f2c0376561f6aaa9
+
+PODFILE CHECKSUM: 898a5a684207120073f1c48b17297fe1835ee2ea
+
+COCOAPODS: 1.5.0

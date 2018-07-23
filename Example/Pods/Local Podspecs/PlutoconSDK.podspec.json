@@ -1,0 +1,22 @@
+{
+  "name": "PlutoconSDK",
+  "version": "0.1.0",
+  "summary": "A short description of PlutoconSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sss989870/PlutoconSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sss989870": "sss989870@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sss989870/PlutoconSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PlutoconSDK/Classes/**/*"
+}

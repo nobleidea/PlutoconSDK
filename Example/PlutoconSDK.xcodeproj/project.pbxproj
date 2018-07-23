@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56E1CCC021056EB000C1DF56 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCAC21056EB000C1DF56 /* Extensions.swift */; };
+		56E1CCC121056EB000C1DF56 /* MonitoringResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCAD21056EB000C1DF56 /* MonitoringResult.swift */; };
+		56E1CCC221056EB000C1DF56 /* Plutocon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCAE21056EB000C1DF56 /* Plutocon.swift */; };
+		56E1CCC321056EB000C1DF56 /* PlutoconConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCAF21056EB000C1DF56 /* PlutoconConnection.swift */; };
+		56E1CCC421056EB000C1DF56 /* PlutoconEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCB021056EB000C1DF56 /* PlutoconEditor.swift */; };
+		56E1CCC521056EB000C1DF56 /* PlutoconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCB121056EB000C1DF56 /* PlutoconManager.swift */; };
+		56E1CCC621056EB000C1DF56 /* PlutoconReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCB221056EB000C1DF56 /* PlutoconReader.swift */; };
+		56E1CCC721056EB000C1DF56 /* PlutoconUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCB321056EB000C1DF56 /* PlutoconUUID.swift */; };
+		56E1CCC821056EB000C1DF56 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCB521056EB000C1DF56 /* DetailViewController.swift */; };
+		56E1CCC921056EB000C1DF56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCB621056EB000C1DF56 /* ViewController.swift */; };
+		56E1CCCA21056EB000C1DF56 /* PlutoconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCB921056EB000C1DF56 /* PlutoconCell.swift */; };
+		56E1CCCB21056EB000C1DF56 /* PlutoconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E1CCBA21056EB000C1DF56 /* PlutoconCell.xib */; };
+		56E1CCCC21056EB000C1DF56 /* DetailDataVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCBC21056EB000C1DF56 /* DetailDataVerticalView.swift */; };
+		56E1CCCD21056EB000C1DF56 /* DetailDataVerticalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E1CCBD21056EB000C1DF56 /* DetailDataVerticalView.xib */; };
+		56E1CCCE21056EB000C1DF56 /* DetailDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1CCBE21056EB000C1DF56 /* DetailDataView.swift */; };
+		56E1CCCF21056EB000C1DF56 /* DetailDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E1CCBF21056EB000C1DF56 /* DetailDataView.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -29,12 +44,27 @@
 
 /* Begin PBXFileReference section */
 		061C4221C1D648C8C5CE5FF9 /* Pods-PlutoconSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlutoconSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlutoconSDK_Example/Pods-PlutoconSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		147CD850580432773140E725 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		147CD850580432773140E725 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2763C4626BB97197D115D0AB /* Pods-PlutoconSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlutoconSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlutoconSDK_Tests/Pods-PlutoconSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		56E1CCAC21056EB000C1DF56 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		56E1CCAD21056EB000C1DF56 /* MonitoringResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoringResult.swift; sourceTree = "<group>"; };
+		56E1CCAE21056EB000C1DF56 /* Plutocon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plutocon.swift; sourceTree = "<group>"; };
+		56E1CCAF21056EB000C1DF56 /* PlutoconConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlutoconConnection.swift; sourceTree = "<group>"; };
+		56E1CCB021056EB000C1DF56 /* PlutoconEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlutoconEditor.swift; sourceTree = "<group>"; };
+		56E1CCB121056EB000C1DF56 /* PlutoconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlutoconManager.swift; sourceTree = "<group>"; };
+		56E1CCB221056EB000C1DF56 /* PlutoconReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlutoconReader.swift; sourceTree = "<group>"; };
+		56E1CCB321056EB000C1DF56 /* PlutoconUUID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlutoconUUID.swift; sourceTree = "<group>"; };
+		56E1CCB521056EB000C1DF56 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		56E1CCB621056EB000C1DF56 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56E1CCB921056EB000C1DF56 /* PlutoconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlutoconCell.swift; sourceTree = "<group>"; };
+		56E1CCBA21056EB000C1DF56 /* PlutoconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlutoconCell.xib; sourceTree = "<group>"; };
+		56E1CCBC21056EB000C1DF56 /* DetailDataVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDataVerticalView.swift; sourceTree = "<group>"; };
+		56E1CCBD21056EB000C1DF56 /* DetailDataVerticalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailDataVerticalView.xib; sourceTree = "<group>"; };
+		56E1CCBE21056EB000C1DF56 /* DetailDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDataView.swift; sourceTree = "<group>"; };
+		56E1CCBF21056EB000C1DF56 /* DetailDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailDataView.xib; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PlutoconSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlutoconSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,11 +72,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7865625E9829B4C961DEB123 /* Pods-PlutoconSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlutoconSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlutoconSDK_Tests/Pods-PlutoconSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A6A222E83C9384285F468156 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A6A222E83C9384285F468156 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B3F2148C54E3D7ECC19C3EA5 /* Pods_PlutoconSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlutoconSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E6377E0CC3717CFE5287AC /* Pods_PlutoconSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlutoconSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D55B45F247DDA03A98ABF6 /* Pods-PlutoconSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlutoconSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlutoconSDK_Example/Pods-PlutoconSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FFC41C6F4A733564ACDC32BC /* PlutoconSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PlutoconSDK.podspec; path = ../PlutoconSDK.podspec; sourceTree = "<group>"; };
+		FFC41C6F4A733564ACDC32BC /* PlutoconSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PlutoconSDK.podspec; path = ../PlutoconSDK.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +108,59 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		56E1CCAB21056EB000C1DF56 /* Plutocon */ = {
+			isa = PBXGroup;
+			children = (
+				56E1CCAC21056EB000C1DF56 /* Extensions.swift */,
+				56E1CCAD21056EB000C1DF56 /* MonitoringResult.swift */,
+				56E1CCAE21056EB000C1DF56 /* Plutocon.swift */,
+				56E1CCAF21056EB000C1DF56 /* PlutoconConnection.swift */,
+				56E1CCB021056EB000C1DF56 /* PlutoconEditor.swift */,
+				56E1CCB121056EB000C1DF56 /* PlutoconManager.swift */,
+				56E1CCB221056EB000C1DF56 /* PlutoconReader.swift */,
+				56E1CCB321056EB000C1DF56 /* PlutoconUUID.swift */,
+			);
+			path = Plutocon;
+			sourceTree = "<group>";
+		};
+		56E1CCB421056EB000C1DF56 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				56E1CCB521056EB000C1DF56 /* DetailViewController.swift */,
+				56E1CCB621056EB000C1DF56 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		56E1CCB721056EB000C1DF56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56E1CCB821056EB000C1DF56 /* Cell */,
+				56E1CCBB21056EB000C1DF56 /* DetailDataView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56E1CCB821056EB000C1DF56 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				56E1CCB921056EB000C1DF56 /* PlutoconCell.swift */,
+				56E1CCBA21056EB000C1DF56 /* PlutoconCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		56E1CCBB21056EB000C1DF56 /* DetailDataView */ = {
+			isa = PBXGroup;
+			children = (
+				56E1CCBC21056EB000C1DF56 /* DetailDataVerticalView.swift */,
+				56E1CCBD21056EB000C1DF56 /* DetailDataVerticalView.xib */,
+				56E1CCBE21056EB000C1DF56 /* DetailDataView.swift */,
+				56E1CCBF21056EB000C1DF56 /* DetailDataView.xib */,
+			);
+			path = DetailDataView;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +185,10 @@
 		607FACD21AFB9204008FA782 /* Example for PlutoconSDK */ = {
 			isa = PBXGroup;
 			children = (
+				56E1CCAB21056EB000C1DF56 /* Plutocon */,
+				56E1CCB421056EB000C1DF56 /* ViewControllers */,
+				56E1CCB721056EB000C1DF56 /* Views */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -189,7 +274,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				EDBBAE7C81630BBB1F0FBC4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,10 +297,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = T9S323XZK2;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = T9S323XZK2;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -247,6 +333,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				56E1CCCF21056EB000C1DF56 /* DetailDataView.xib in Resources */,
+				56E1CCCB21056EB000C1DF56 /* PlutoconCell.xib in Resources */,
+				56E1CCCD21056EB000C1DF56 /* DetailDataVerticalView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -298,24 +387,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EDBBAE7C81630BBB1F0FBC4F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PlutoconSDK_Tests/Pods-PlutoconSDK_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlutoconSDK_Tests/Pods-PlutoconSDK_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EED7A78FB5210359757C7006 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,8 +412,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				56E1CCCA21056EB000C1DF56 /* PlutoconCell.swift in Sources */,
+				56E1CCC821056EB000C1DF56 /* DetailViewController.swift in Sources */,
+				56E1CCC621056EB000C1DF56 /* PlutoconReader.swift in Sources */,
+				56E1CCC021056EB000C1DF56 /* Extensions.swift in Sources */,
+				56E1CCCC21056EB000C1DF56 /* DetailDataVerticalView.swift in Sources */,
+				56E1CCC121056EB000C1DF56 /* MonitoringResult.swift in Sources */,
+				56E1CCCE21056EB000C1DF56 /* DetailDataView.swift in Sources */,
+				56E1CCC221056EB000C1DF56 /* Plutocon.swift in Sources */,
+				56E1CCC921056EB000C1DF56 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				56E1CCC721056EB000C1DF56 /* PlutoconUUID.swift in Sources */,
+				56E1CCC321056EB000C1DF56 /* PlutoconConnection.swift in Sources */,
+				56E1CCC421056EB000C1DF56 /* PlutoconEditor.swift in Sources */,
+				56E1CCC521056EB000C1DF56 /* PlutoconManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,11 +512,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -475,10 +559,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -488,6 +573,7 @@
 			baseConfigurationReference = E9D55B45F247DDA03A98ABF6 /* Pods-PlutoconSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T9S323XZK2;
 				INFOPLIST_FILE = PlutoconSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -503,6 +589,7 @@
 			baseConfigurationReference = 061C4221C1D648C8C5CE5FF9 /* Pods-PlutoconSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T9S323XZK2;
 				INFOPLIST_FILE = PlutoconSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -517,6 +604,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7865625E9829B4C961DEB123 /* Pods-PlutoconSDK_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = T9S323XZK2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -539,6 +627,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2763C4626BB97197D115D0AB /* Pods-PlutoconSDK_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = T9S323XZK2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
