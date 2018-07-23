@@ -10,7 +10,7 @@ import Foundation
 import CoreBluetooth
 
 
-@objc enum PlutoconManagerState : Int {
+@objc public enum PlutoconManagerState : Int {
     
     case unknown
     
@@ -25,14 +25,14 @@ import CoreBluetooth
     case poweredOn
 }
 
-protocol PlutoconManagerDelegate {
+public protocol PlutoconManagerDelegate {
     func plutoconManagerDidUpdateState(_ state: PlutoconManagerState)
     
     func plutoconManager(_ manager: PlutoconManager, didDiscover plutocon: Plutocon, plutocons: [Plutocon])
 }
 
 typealias PlutoconScanCompletion = (Plutocon, [Plutocon]) -> Void
-class PlutoconManager: NSObject {
+public class PlutoconManager: NSObject {
     
     private var centralManager: CBCentralManager?
     internal var delegate: PlutoconManagerDelegate?
@@ -81,11 +81,11 @@ class PlutoconManager: NSObject {
 
 // MARK: - CBCentralManagerDelegate
 extension PlutoconManager: CBCentralManagerDelegate {
-    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+    public func centralManagerDidUpdateState(_ central: CBCentralManager) {
         self.delegate?.plutoconManagerDidUpdateState(PlutoconManagerState(rawValue: central.state.rawValue)!)
     }
     
-    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+    public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         guard (RSSI as! Int) < 0 else { return }
         guard let plutocon = Plutocon.createFromScanResult(peripheral: peripheral, advertisementData: advertisementData, rssi: RSSI) else { return }
         
@@ -101,15 +101,15 @@ extension PlutoconManager: CBCentralManagerDelegate {
 }
 
 extension PlutoconManager {
-    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+    public func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         plutoconConnection?.connectStateChanged(state: PlutoconConnectState.didConnect)
     }
     
-    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+    public func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         plutoconConnection?.connectStateChanged(state: PlutoconConnectState.didDisconnect(error: error))
     }
     
-    func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
+    public func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
         plutoconConnection?.connectStateChanged(state: PlutoconConnectState.didFailToConnect(error: error))
     }
 }
