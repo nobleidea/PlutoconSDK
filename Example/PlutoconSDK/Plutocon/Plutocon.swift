@@ -129,7 +129,7 @@ public class Plutocon: Equatable {
         
         if serviceDataArr.count < 1, serviceDataArr[0] != 0x01 { return nil }
         
-//        let battery = Int(UInt16(serviceDataArr[8]) << 8 | UInt16(serviceDataArr[9] & 0xff))
+        let battery = Int(UInt16(serviceDataArr[8]) << 8 | UInt16(serviceDataArr[9] & 0xff))
         
         return Plutocon(peripheral: peripheral, name: name, rssi: rssi, battery: 0, manufacturerData: manufacturerDataArr, serviceData: serviceDataArr, isCertification: true)
     }

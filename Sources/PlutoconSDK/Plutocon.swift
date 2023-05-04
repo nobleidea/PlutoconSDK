@@ -129,9 +129,9 @@ public class Plutocon: Equatable {
         
         if serviceDataArr.count < 1, serviceDataArr[0] != 0x01 { return nil }
         
-        let battery = Int(UInt16(serviceDataArr[8]) << 8 | UInt16(serviceDataArr[9] & 0xff))
+//        let battery = Int(UInt16(serviceDataArr[8]) << 8 | UInt16(serviceDataArr[9] & 0xff))
         
-        return Plutocon(peripheral: peripheral, name: name, rssi: rssi, battery: battery, manufacturerData: manufacturerDataArr, serviceData: serviceDataArr, isCertification: true)
+        return Plutocon(peripheral: peripheral, name: name, rssi: rssi, battery: 10, manufacturerData: manufacturerDataArr, serviceData: serviceDataArr, isCertification: true)
     }
     
     public static func ==(lhs: Plutocon, rhs: Plutocon) -> Bool {
