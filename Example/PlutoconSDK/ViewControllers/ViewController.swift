@@ -67,6 +67,7 @@ extension ViewController: PlutoconManagerDelegate {
         guard state == .poweredOn else {
             return
         }
+        print(#function)
         
         /* isMonitoring 옵션으로 하나의 기기에 대해서 콜백을 한번만 받을 건지 계속 스캔되게 할건지 설정 */
         self.plutoconManager?.startScan(isMonitoring: true)
@@ -91,6 +92,7 @@ extension ViewController: PlutoconConnectionDelegate {
     
     /* 연결에 성공했을 때 */
     func plutoconConnection(_ connection: PlutoconConnection, didConnect plutocon: Plutocon) {
+        print(#function)
         let tempIndex = self.connectingIndex
         self.connectingIndex = nil
         
