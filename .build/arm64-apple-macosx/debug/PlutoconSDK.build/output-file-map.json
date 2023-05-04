@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/master.swiftdeps"
+  },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconSDK.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swiftdeps"
+  }
+}

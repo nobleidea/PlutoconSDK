@@ -1,0 +1,80 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "PlutoconSDK-debug.module": ["<PlutoconSDK-debug.module>"]
+  "PlutoconSDKPackageTests-debug.test": ["<PlutoconSDKPackageTests-debug.test>"]
+  "PlutoconSDKTests-debug.module": ["<PlutoconSDKTests-debug.module>"]
+  "main": ["<PlutoconSDK-debug.module>"]
+  "test": ["<PlutoconSDK-debug.module>","<PlutoconSDKPackageTests-debug.test>","<PlutoconSDKTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Tests/PlutoconSDKTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "<PlutoconSDK-debug.module>":
+    tool: phony
+    inputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swift.o","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.swiftmodule"]
+    outputs: ["<PlutoconSDK-debug.module>"]
+
+  "<PlutoconSDKPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKPackageTests.xctest/Contents/MacOS/PlutoconSDKPackageTests"]
+    outputs: ["<PlutoconSDKPackageTests-debug.test>"]
+
+  "<PlutoconSDKTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build/PlutoconSDKTests.swift.o","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.swiftmodule"]
+    outputs: ["<PlutoconSDKTests-debug.module>"]
+
+  "C.PlutoconSDK-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconSDK.swift"]
+    outputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swift.o","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.swiftmodule"]
+    executable: "/Applications/Xcode-14.3.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "PlutoconSDK"
+    module-output-path: "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.swiftmodule"
+    import-paths: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build"
+    objects: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.13","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK-Swift.h","-color-diagnostics","-sdk","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk","-F","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconSDK.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.PlutoconSDKPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swift.o","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build/PlutoconSDKTests.swift.o"]
+    outputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKPackageTests.xctest/Contents/MacOS/PlutoconSDKPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/PlutoconSDKPackageTests.xctest/Contents/MacOS/PlutoconSDKPackageTests"
+    args: ["/Applications/Xcode-14.3.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug","-o","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKPackageTests.xctest/Contents/MacOS/PlutoconSDKPackageTests","-module-name","PlutoconSDKPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode-14.3.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.5/macosx","-target","arm64-apple-macosx12.0","-Xlinker","-add_ast_path","-Xlinker","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.swiftmodule","-sdk","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk","-F","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-14.3.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.PlutoconSDKTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/Tests/PlutoconSDKTests/PlutoconSDKTests.swift","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.swiftmodule"]
+    outputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build/PlutoconSDKTests.swift.o","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.swiftmodule"]
+    executable: "/Applications/Xcode-14.3.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "PlutoconSDKTests"
+    module-output-path: "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.swiftmodule"
+    import-paths: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build"
+    objects: ["/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build/PlutoconSDKTests.swift.o"]
+    other-args: ["-target","arm64-apple-macosx12.0","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics","-sdk","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk","-F","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/gyun/Documents/workspace/PlutoconSDK/Tests/PlutoconSDKTests/PlutoconSDKTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/","/Users/gyun/Documents/workspace/PlutoconSDK/Tests/PlutoconSDKTests/","/Users/gyun/Documents/workspace/PlutoconSDK/Package.swift","/Users/gyun/Documents/workspace/PlutoconSDK/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

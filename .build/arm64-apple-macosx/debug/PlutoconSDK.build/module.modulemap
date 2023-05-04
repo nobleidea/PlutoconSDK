@@ -1,0 +1,4 @@
+module PlutoconSDK {
+    header "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK-Swift.h"
+    requires objc
+}

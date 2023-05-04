@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "f1ed7ff3713fb0a1926c3677d4539190c3c9279ec4564ffce1138b8728a684ac"
+build_start_time: [1683168765, 980260000]
+build_end_time: [1683168766, 209152000]
+inputs:
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconSDK.swift": [1683168757, 893522139]

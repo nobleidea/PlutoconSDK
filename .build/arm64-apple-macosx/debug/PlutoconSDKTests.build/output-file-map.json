@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build/master.swiftdeps"
+  },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Tests/PlutoconSDKTests/PlutoconSDKTests.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build/PlutoconSDKTests.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build/PlutoconSDKTests.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build/PlutoconSDKTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDKTests.build/PlutoconSDKTests.swiftdeps"
+  }
+}
