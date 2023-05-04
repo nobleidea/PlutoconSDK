@@ -26,14 +26,54 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/MonitoringResult.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/Plutocon.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconConnection.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconEditor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconReader.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconSDK.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconUUID.swift"
         }
       ],
       "isLibrary" : true,
       "moduleName" : "PlutoconSDK",
       "moduleOutputPath" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.swiftmodule",
       "objects" : [
-        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swift.o"
+        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Extensions.swift.o",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/MonitoringResult.swift.o",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Plutocon.swift.o",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconConnection.swift.o",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconEditor.swift.o",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconManager.swift.o",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconReader.swift.o",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swift.o",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconUUID.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -69,7 +109,39 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/MonitoringResult.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Plutocon.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconConnection.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconEditor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconReader.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconUUID.swift.o"
         },
         {
           "kind" : "file",
@@ -77,7 +149,15 @@
         }
       ],
       "sources" : [
-        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconSDK.swift"
+        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/Extensions.swift",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/MonitoringResult.swift",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/Plutocon.swift",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconConnection.swift",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconEditor.swift",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconManager.swift",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconReader.swift",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconSDK.swift",
+        "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconUUID.swift"
       ],
       "tempsPath" : "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build",
       "wholeModuleOptimization" : false
@@ -156,7 +236,15 @@
       "PlutoconSDK",
       "-incremental",
       "-c",
+      "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/Extensions.swift",
+      "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/MonitoringResult.swift",
+      "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/Plutocon.swift",
+      "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconConnection.swift",
+      "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconEditor.swift",
+      "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconManager.swift",
+      "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconReader.swift",
       "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconSDK.swift",
+      "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconUUID.swift",
       "-I",
       "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug",
       "-target",

@@ -2,10 +2,58 @@
   "": {
     "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/master.swiftdeps"
   },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/Extensions.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Extensions.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Extensions.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Extensions.swiftdeps"
+  },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/MonitoringResult.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/MonitoringResult.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/MonitoringResult.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/MonitoringResult~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/MonitoringResult.swiftdeps"
+  },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/Plutocon.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Plutocon.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Plutocon.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Plutocon~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/Plutocon.swiftdeps"
+  },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconConnection.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconConnection.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconConnection.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconConnection~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconConnection.swiftdeps"
+  },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconEditor.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconEditor.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconEditor.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconEditor~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconEditor.swiftdeps"
+  },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconManager.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconManager.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconManager.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconManager.swiftdeps"
+  },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconReader.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconReader.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconReader.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconReader.swiftdeps"
+  },
   "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconSDK.swift": {
     "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.d",
     "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swift.o",
     "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK~partial.swiftmodule",
     "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconSDK.swiftdeps"
+  },
+  "/Users/gyun/Documents/workspace/PlutoconSDK/Sources/PlutoconSDK/PlutoconUUID.swift": {
+    "dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconUUID.d",
+    "object": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconUUID.swift.o",
+    "swiftmodule": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconUUID~partial.swiftmodule",
+    "swift-dependencies": "/Users/gyun/Documents/workspace/PlutoconSDK/.build/arm64-apple-macosx/debug/PlutoconSDK.build/PlutoconUUID.swiftdeps"
   }
 }
