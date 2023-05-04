@@ -122,7 +122,7 @@ public class Plutocon: Equatable {
             else { return nil }
         
         var serviceDataArr = [UInt8](repeating: 0, count: 8)
-        advService.copyBytes(to: &serviceDataArr, count: serviceDataArr.count)
+//        advService.copyBytes(to: &serviceDataArr, count: serviceDataArr.count)
         
         var manufacturerDataArr = [UInt8](repeating: 0, count: advManufacturer.count)
         advManufacturer.copyBytes(to: &manufacturerDataArr, count: manufacturerDataArr.count)
