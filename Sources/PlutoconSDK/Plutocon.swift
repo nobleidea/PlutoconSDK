@@ -121,7 +121,7 @@ public class Plutocon: Equatable {
             let advService = (advertisementData[CBAdvertisementDataServiceDataKey] as? NSDictionary)?.allValues[0] as? Data
             else { return nil }
         
-        var serviceDataArr = [UInt8](repeating: 0, count: advService.count)
+        var serviceDataArr = [UInt8](repeating: 0, count: 8)
         advService.copyBytes(to: &serviceDataArr, count: serviceDataArr.count)
         
         var manufacturerDataArr = [UInt8](repeating: 0, count: advManufacturer.count)
